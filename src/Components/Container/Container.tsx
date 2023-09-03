@@ -1,11 +1,16 @@
 import {StyledContainer} from './Container.Styled'
 import {Header} from '../Header/Header'
 
-export const Container = () => {
+
+interface ContainerProps{
+    children: React.ReactNode
+}
+
+
+export const Container = ({children}:ContainerProps ) => {
     return (
         <StyledContainer>
             <Header></Header>
-            
         </StyledContainer>
     )
 }
