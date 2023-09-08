@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     background-color: white;
     display: flex;
     align-items: center;
-    outline: 2px solid blue;
+    
     
 `
 export const StyledHeaderContainer = styled.div`
@@ -16,9 +16,10 @@ export const StyledHeaderContainer = styled.div`
     
 `
 export const ImgLogoContainer = styled.div`
-    height:3rem;
-    width:100%
+    height:1.6rem;
+    width:auto;
     display:flex;
+    margin-left: 5%;
 `
 export const ImgLogo = styled.img `
     height:100%;

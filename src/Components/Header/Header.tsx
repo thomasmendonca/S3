@@ -1,6 +1,6 @@
 import React from 'react'
 import {StyledHeader, StyledHeaderContainer,ImgLogoContainer,ImgLogo} from './Header.Styled.ts'
-import Logo from '../../assets/resqaiLogo.png'
+import Logo from '../../assets/brand-logodevsolutions.svg'
 
 
 

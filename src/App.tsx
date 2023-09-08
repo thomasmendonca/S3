@@ -5,16 +5,15 @@ import { Header } from './Components/Header/Header'
 import {Container} from './Components/Container/Container'
 import { FormLogin } from './Components/FormLogin/FormLogin'
 import './App.css'
+import { Login } from './Pages/Login'
 
 function App() {
 
 
   return (
     <>
-        <Header></Header>
-        {/* <Container></Container> */}
-        <FormLogin/>
         
+        <Login></Login>
         
         
       
