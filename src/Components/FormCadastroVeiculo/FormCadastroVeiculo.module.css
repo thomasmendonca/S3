@@ -1,0 +1,44 @@
+@import url('../../assets/css/colors.css');
+.formContainerStatic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    
+}
+.formTittle{
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+@media (min-width: 768px){
+    .formContainerStatic{
+        width: 60%;
+        margin-left:20%;
+        margin-right:20% ;
+    }
+    .form{
+        width: 70%;
+    }
+}
+@media (min-width: 1024px){
+    .formContainerStatic{
+        width: 50%;
+        margin-left:25%;
+        margin-right:25% ;
+    }
+    .form{
+        width: 65%;
+    }
+}
