@@ -1,4 +1,4 @@
-import Style from "./SlideWelcome.module.css";
+import Style from "./Slide.module.css";
 import Logo from "../../assets/brand-logodevsolutions.svg";
 import Guincho from "../../assets/guincho.svg";
 import StyleF from "../FormLogin/Form.module.css";

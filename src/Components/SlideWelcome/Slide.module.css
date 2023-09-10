@@ -13,6 +13,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
+  display: flex;
 }
 
 .containerLogo{
@@ -71,11 +72,35 @@
         width: 80%;
         margin: 0 10%;
     }
+    .logo{
+        width: 50%;
+        margin-left: 1rem;
+    }
 }
 
-@media(min-with: 992px){
+@media(min-width: 992px){
     .containerSlide{
         width: 75%;
         margin: 0 12.5%;
+    }
+}
+
+@media(min-width: 1024px){
+    .containerSlide{
+        width: 60%;
+        margin: 0 20%;
+    }
+    .guincho{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1200px){
+    .containerSlide{
+        width: 40%;
+        margin: 0 30%;
+    }
+    .guincho{
+        width: 70%;
     }
 }
