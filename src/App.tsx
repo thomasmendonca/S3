@@ -7,6 +7,7 @@ import { Login } from './Pages/Login'
 import { Cadastro } from './Pages/Cadastro'
 import { CadastroVeiculo } from './Pages/CadastroVeiculo'
 import './App.css'
+import { Welcome } from './Pages/Welcome'
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
   return (
     <>
         {/* <Cadastro></Cadastro> */}
-        <CadastroVeiculo></CadastroVeiculo>
-        
+        {/* <CadastroVeiculo></CadastroVeiculo> */}
+        <Welcome></Welcome>
         
       
     </>
