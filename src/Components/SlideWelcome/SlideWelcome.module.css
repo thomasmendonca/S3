@@ -8,6 +8,15 @@
     margin: 0 5%;
 }
 
+.containerSlideBlue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    background-color: var(--lightblue);
+}
+
 .containerTitle {
   color: var(--darkblue);
   font-size: 1rem;
@@ -48,6 +57,18 @@
     font-weight: 600;
     font-size: 1.4rem;
     margin: 0.5rem 0;
+}
+
+.redText{
+    color: var(--darkred);
+}
+
+.darkBlueText{
+    color: var(--darkblue)
+}
+
+.whiteText{
+    color: white;
 }
 
 .containerGuincho{

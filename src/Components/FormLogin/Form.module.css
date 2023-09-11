@@ -166,7 +166,7 @@
 .buttonRed {
   font-weight: 200;
   color: var(--common-light);
-  background-color: var(--darkblue);
+  background-color: var(--darkred);
   cursor: pointer;
   text-decoration: none;
   height: 2.5rem;
@@ -178,6 +178,23 @@
   border-radius: 5px;
   font-size: large;
 }
+
+.buttonRedSmall {
+  font-weight: 100;
+  color: var(--common-light);
+  background-color: var(--darkred);
+  cursor: pointer;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+}
+
 .buttonLarge {
   font-weight: 200;
   color: var(--common-light);

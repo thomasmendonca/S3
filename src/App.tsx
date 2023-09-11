@@ -8,17 +8,17 @@ import { Cadastro } from './Pages/Cadastro'
 import { CadastroVeiculo } from './Pages/CadastroVeiculo'
 import './App.css'
 import { Welcome } from './Pages/Welcome'
+import { Start } from './Pages/Start'
 
 function App() {
 
 
   return (
     <>
-        {/* <Cadastro></Cadastro> */}
-        {/* <CadastroVeiculo></CadastroVeiculo> */}
-        <Welcome></Welcome>
-        
-      
+        {/* <Cadastro/> */}
+        {/* <CadastroVeiculo/> */}
+        {/* <Welcome/> */}
+        <Start/>
     </>
   )
 }
