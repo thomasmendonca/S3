@@ -7,6 +7,9 @@ import { CadastroVeiculo } from './Pages/CadastroVeiculo'
 import { Welcome } from './Pages/Welcome'
 import { Start } from './Pages/Start'
 import { NextStep } from './Pages/NextStep'
+import { Ready } from './Pages/Ready'
+import { Finish } from './Pages/Finish'
+
 
 function App() {
 
@@ -17,7 +20,9 @@ function App() {
         {/* <CadastroVeiculo/> */}
         {/* <Welcome/> */}
         {/* <Start/> */}
-        <NextStep/>
+        {/* <NextStep/> */}
+        {/* <Ready/> */}
+        <Finish/>
     </>
   )
 }
