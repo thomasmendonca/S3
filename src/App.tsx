@@ -10,6 +10,7 @@ import { NextStep } from './Pages/NextStep'
 import { Ready } from './Pages/Ready'
 import { Finish } from './Pages/Finish'
 import { Home } from './Pages/Home'
+import { Criadores } from './Pages/Criadores'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         {/* <Ready/> */}
         {/*<Finish/>*/}
         <Home/>
+        {/* <Criadores/> */}
     </>
   )
 }

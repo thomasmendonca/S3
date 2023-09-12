@@ -1,0 +1,100 @@
+@import url(../../assets/css/colors.css);
+@import url(../../Components/FormLogin/Form.module.css);
+.container {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.titleCriadores {
+  font-size: 1.8rem;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.titleGitHub {
+  margin: 0;
+  font-weight: 400;
+}
+.linkGitHub {
+  margin: 0;
+  font-weight: 100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-style: none;
+  color: var(--darkblue);
+}
+.groupCriadores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.cardCriadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+.containerImg {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgCriador {
+  width: 80%;
+}
+.contentCriador {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 70%;
+}
+.especialidadeCriador {
+  font-size: 1.2rem;
+  color: var(--darkblue);
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+.textCriador {
+  background-color: var(--lightgray);
+  color: var(--darkgray);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 4rem;
+  min-width: 100%;
+}
+.text {
+  margin: 1% 2%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 65%;
+    margin: 0 18%;
+  }
+  .groupCriadores {
+    margin-bottom: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .groupCriadores {
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .cardCriadores {
+    width: 40%;
+  }
+}
