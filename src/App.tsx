@@ -9,6 +9,7 @@ import { Start } from './Pages/Start'
 import { NextStep } from './Pages/NextStep'
 import { Ready } from './Pages/Ready'
 import { Finish } from './Pages/Finish'
+import { Home } from './Pages/Home'
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         {/* <Start/> */}
         {/* <NextStep/> */}
         {/* <Ready/> */}
-        <Finish/>
+        {/*<Finish/>*/}
+        <Home/>
     </>
   )
 }
