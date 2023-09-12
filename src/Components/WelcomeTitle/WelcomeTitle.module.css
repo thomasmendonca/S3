@@ -1,0 +1,19 @@
+@import url(../../assets/css/colors.css);
+
+.containerTitle {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15% 5%;
+}
+
+.text {
+  color: var(--lightblue);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
