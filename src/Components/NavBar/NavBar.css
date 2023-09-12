@@ -1,6 +1,6 @@
-.NavBar .Navigation {
-    position: absolute;         
-
+.NavBar .Navigation {         
+    position: fixed;
+    top: -1%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -13,28 +13,26 @@
 }
 
 .NavBar nav ul{
+    position: fixed;
     display: flex;
     flex-direction: column;
     list-style: none;
-
-    position:static;
-    top: 10%;
-    left: 7%;
-
-    width: 20vw;
+    width: 60%;
+    margin-left: -5%;
+    margin-top: 5%;
 }
 
 .NavBar nav ul li {
     display: flex;
     text-align: left;
     align-items: center;
-    padding: 20px;
+    padding: 4% 2%;
 
     background: var(--light-gray, #F4F4F4);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-bottom: 3.5px solid #669BBC;
     
-    font-size: 24px;
+    font-size: 1.2rem;
     color: #003049;
 }
 
@@ -44,13 +42,11 @@
 }
 
 .PersonCircle{
-    position: absolute;
-    right: 5%;
+    margin-left: 10%;
 }
 
 .RocketChat{
-    position: absolute;
-    right: 5%;
+    margin-left: 12%;
 }
 
 .NavBar nav ul li #leave {

@@ -27,7 +27,7 @@ export const Menu = () => {
                         Minha Conta
                         <IoPersonCircleSharp
                         className="PersonCircle"
-                        size="60px"
+                        size="3rem"
                         />
                     </li>
                     <li>Meus Veículos</li>
@@ -37,7 +37,7 @@ export const Menu = () => {
                         Chat Rápido 
                         <FaRocketchat 
                         className="RocketChat"
-                        size="60px"
+                        size="3rem"
                         /> 
                     </li>
                     <li onClick={closeMenu}>Sair</li>
