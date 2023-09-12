@@ -13,7 +13,7 @@ export const WelcomeTitle = ({children} : WTitleProps) => {
                     <img src={Logo} alt="Logo DevSolutions"  className={Style.image}/>
                 </div>
                 <div className={Style.containerText}>
-                    <h1 className={Style.text}> {children} </h1>
+                    <h1 className={Style.text}> Bem-vindo(a), {children}! </h1>
                 </div>
             </div>
         </>
