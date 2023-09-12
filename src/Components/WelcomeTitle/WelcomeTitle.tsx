@@ -1,4 +1,5 @@
 import Logo from "../../assets/img-logo-dsDS_LOGO_MIN.svg"
+import Style from "./WelcomeTitle.module.css"
 
 interface WTitleProps{
     children : string
@@ -7,9 +8,13 @@ interface WTitleProps{
 export const WelcomeTitle = ({children} : WTitleProps) => {
     return(
         <>
-            <div>
-                <img src={Logo} alt="Logo DevSolutions" />
-                <h1> {children} </h1>
+            <div className={Style.containerTitle}>
+                <div className={Style.containerImage}>
+                    <img src={Logo} alt="Logo DevSolutions"  className={Style.image}/>
+                </div>
+                <div className={Style.containerText}>
+                    <h1 className={Style.text}> {children} </h1>
+                </div>
             </div>
         </>
     )
