@@ -1,6 +1,4 @@
-.NavBar .Navigation {         
-    position: fixed;
-    top: -1%;
+.NavBar .Navigation {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -18,8 +16,8 @@
     flex-direction: column;
     list-style: none;
     width: 60%;
-    margin-left: -5%;
-    margin-top: 5%;
+    margin-left: -10%;
+    margin-top: 10%;
 }
 
 .NavBar nav ul li {
@@ -51,4 +49,36 @@
 
 .NavBar nav ul li #leave {
     color: #C1121F;
+}
+
+@media(min-width: 768px){
+    .NavBar nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 30%;
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+}
+
+@media(min-width: 992px){
+    .NavBar nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 30%;
+    }
+}
+
+@media(min-width: 1024px){
+    .NavBar nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 30%;
+    }
 }
