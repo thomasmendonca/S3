@@ -7,17 +7,19 @@ import { NavBar } from "../Components/NavBar/NavBar";
 export const Home = () => {
   return (
     <>
-      <div className={Style.menuContainer}>
-        <NavBar />
-      </div>
-      <div className={Style.containerWelcome}>
-        <WelcomeTitle>Usuário(a)</WelcomeTitle>
-      </div>
-      <div className={Style.containerNewVehicle}>
-        <NewVehicle />
-      </div>
-      <div className={Style.containerCasualty}>
-        <CallCasualty />
+      <div className={Style.contentContainer}>
+        <div className={Style.menuContainer}>
+          <NavBar />
+        </div>
+        <div className={Style.containerWelcome}>
+          <WelcomeTitle>Usuário(a)</WelcomeTitle>
+        </div>
+        <div className={Style.containerNewVehicle}>
+          <NewVehicle />
+        </div>
+        <div className={Style.containerCasualty}>
+          <CallCasualty />
+        </div>
       </div>
     </>
   );

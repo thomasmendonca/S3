@@ -1,0 +1,13 @@
+.contentContainer{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.containerWelcome{
+    width: 90%;
+    margin-left: 10%;
+}
+
+.containerNewVehicle{
+    margin-top: -10%;
+}
