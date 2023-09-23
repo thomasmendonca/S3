@@ -4,7 +4,14 @@ import Gabriel from "../../assets/gabriel.svg";
 import MatheusG from "../../assets/matheusG.svg";
 import MatheusD from "../../assets/MatheusD.svg";
 import Kaue from "../../assets/kaue.svg";
+import { useNavigate } from "react-router";
+import { routes } from "../../routes";
 export const ContainerCriadores = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate(routes.home)
+  }
+
   return (
     <>
       <div className={style.container}>
@@ -88,7 +95,7 @@ export const ContainerCriadores = () => {
             </div>
           </div>
         </div>
-        <button className={style.buttonBlue}>Voltar</button>
+        <button className={style.buttonBlue} onClick={handleClick}>Voltar</button>
       </div>
     </>
   );

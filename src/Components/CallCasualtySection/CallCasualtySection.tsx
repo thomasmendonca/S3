@@ -1,7 +1,16 @@
 import Style from "./CallCasualtySection.module.css";
 import CarCrash from "../../assets/carcrash-icon.svg";
+import { useNavigate } from "react-router";
+import { routes } from "../../routes";
 
 export const CallCasualty = () => {
+
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate(routes.cadastroVeiculo)
+  }
+  
   return (
     <>
       <div className={Style.contentContainer}>
@@ -20,7 +29,9 @@ export const CallCasualty = () => {
           </p>
         </div>
         <div className={Style.buttonContainer}>
-          <button type="button" className={Style.buttonRed}>
+          <button type="button" 
+          className={Style.buttonRed}
+          onClick={handleClick}>
             Acionar sinistro
           </button>
         </div>

@@ -1,6 +1,17 @@
+import { useNavigate } from "react-router";
 import Style from "./SlideNextStep.module.css";
+import { routes } from "../../routes";
 
 export const SlideNextStep = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate(routes.start);
+  };
+  
+  const handleNext = () => {
+    navigate(routes.ready)
+  }
+
   return (
     <>
       <div className={Style.containerSlide}>
@@ -21,8 +32,8 @@ export const SlideNextStep = () => {
         </div>
 
         <div className={Style.buttonContainer}>
-          <button className={Style.buttonRed}> Voltar </button>
-          <button className={Style.buttonBlue}> Próximo </button>
+          <button className={Style.buttonRed} onClick={handleBack}> Voltar </button>
+          <button className={Style.buttonBlue} onClick={handleNext}> Próximo </button>
         </div>
       </div>
     </>

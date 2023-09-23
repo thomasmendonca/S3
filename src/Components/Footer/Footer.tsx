@@ -2,6 +2,8 @@ import style from './Footer.module.css'
 import FooterLogo from '../../assets/footerLogo.svg'
 import FacebookLogo from '../../assets/facebookLogo.svg'
 import InstagramLogo from '../../assets/instagramLogo.svg'
+import { Link } from 'react-router-dom'
+import { routes } from '../../routes'
 export const Footer = ()=>{
     return(
     <>
@@ -10,7 +12,7 @@ export const Footer = ()=>{
                 <img className={style.footerLogo}src={FooterLogo} alt="" />
             </div>
                 <ul className={style.footerList}>
-                    <li><a className={style.footerLinkDefault}>Quem Somos</a></li>
+                    <li><Link to={routes.criadores} className={style.footerLinkDefault}>Quem Somos</Link></li>
                     <li><a className={style.footerLinkDefault}>Whatsapp</a></li>
                     <li><a className={style.footerLinkDefault}>Chat Online</a></li>
                     <li><a className={style.footerLinkDefault}>E-mail</a></li>

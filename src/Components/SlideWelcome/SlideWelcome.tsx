@@ -2,8 +2,15 @@ import Style from "./Slidewelcome.module.css";
 import Logo from "../../assets/brand-logodevsolutions.svg";
 import Guincho from "../../assets/guincho.svg";
 import StyleF from "../FormLogin/Form.module.css";
+import { useNavigate } from "react-router";
+import { routes } from "../../routes";
 
 export const SlideWelcome = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(routes.start);
+  };
+
   return (
     <>
       <div className={Style.containerSlide}>
@@ -34,7 +41,9 @@ export const SlideWelcome = () => {
           />
         </div>
         <div className={Style.buttonContainer}>
-          <button className={StyleF.buttonBlueSmall}>Começar</button>
+          <button className={StyleF.buttonBlueSmall} onClick={handleClick}>
+            Começar
+          </button>
         </div>
       </div>
     </>

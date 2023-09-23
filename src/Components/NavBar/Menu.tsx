@@ -2,6 +2,8 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {FaRocketchat} from 'react-icons/fa'
 import {IoPersonCircleSharp} from 'react-icons/io5'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { routes } from '../../routes'
 
 export const Menu = () => {
 
@@ -31,8 +33,8 @@ export const Menu = () => {
                         />
                     </li>
                     <li>Meus Veículos</li>
-                    <li>Dúvidas Frequentes</li>
-                    <li>Criadores</li>
+                    <li><Link to={routes.welcome}> Dúvidas Frequentes </Link></li>
+                    <li><Link to={routes.criadores}> Criadores </Link></li>
                     <li>
                         Chat Rápido 
                         <FaRocketchat 

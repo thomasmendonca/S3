@@ -1,7 +1,18 @@
+import { useNavigate } from "react-router";
 import Rocket from "../../assets/rocket.svg";
 import Style from "./SlideReady.module.css";
+import { routes } from "../../routes";
 
 export const SlideReady = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate(routes.nextStep);
+  };
+  
+  const handleDone = () => {
+    navigate(routes.home)
+  }
+
   return (
     <>
       <div className={Style.containerSlide}>
@@ -19,8 +30,8 @@ export const SlideReady = () => {
           <img src={Rocket} alt="Imagem de Foguete" className={Style.rocket} />
         </div>
         <div className={Style.buttonContainer}>
-          <button className={Style.buttonRed}> Voltar </button>
-          <button className={Style.buttonBlue}> Concluir </button>
+          <button className={Style.buttonRed} onClick={handleBack}> Voltar </button>
+          <button className={Style.buttonBlue} onClick={handleDone}> Concluir </button>
         </div>
       </div>
     </>
