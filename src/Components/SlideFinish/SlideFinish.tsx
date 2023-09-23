@@ -1,7 +1,14 @@
 import Style from "./SlideFinish.module.css";
 import Tick from "../../assets/correct.svg";
+import { useNavigate } from "react-router";
+import { routes } from "../../routes";
 
 export const SlideFinish = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate(routes.home)
+  }
+
   return (
     <>
       <div className={Style.containerSlide}>
@@ -22,7 +29,7 @@ export const SlideFinish = () => {
         </div>
 
         <div className={Style.buttonContainer}>
-          <button className={Style.buttonBlue}> Continuar </button>
+          <button className={Style.buttonBlue} onClick={handleClick}> Continuar </button>
         </div>
       </div>
     </>

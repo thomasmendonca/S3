@@ -1,7 +1,14 @@
 import style from '../FormLogin/Form.module.css'
 import styleS from './FormCadastroVeiculo.module.css'
 import Logo from '../../assets/logo-dsDS_LOGO_MIN.svg'
+import { useNavigate } from 'react-router'
+import { routes } from '../../routes'
 export const FormCadastroVeiculo = () =>{
+    const navigate = useNavigate()
+    const handleClick = () => {
+      navigate(routes.finish)
+    }
+
     return(
         <>
             <div className={style.logoContainerStatic}>
@@ -37,7 +44,7 @@ export const FormCadastroVeiculo = () =>{
                         <option value=""></option>
                     </select>
                     </div>
-                    <button className={style.buttonBlue}>Cadastrar Veículo</button>
+                    <button className={style.buttonBlue} onClick={handleClick}>Cadastrar Veículo</button>
                 </form>
             </div>
 
