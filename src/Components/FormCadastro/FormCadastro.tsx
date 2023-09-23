@@ -1,5 +1,7 @@
 import style from '../FormLogin/Form.module.css'
 import Logo from '../../assets/logo-dsDS_LOGO_MIN.svg'
+import { Link } from 'react-router-dom'
+import { routes } from '../../routes'
 export const FormCadastro = () => {
     return (
         
@@ -30,7 +32,7 @@ export const FormCadastro = () => {
                 </div> 
                 
                 
-                <a href="" className={style.buttonLarge}>Criar Conta</a>
+                <Link to={routes.home} className={style.buttonLarge}>Criar Conta</Link>
                 </form>
                 
                 

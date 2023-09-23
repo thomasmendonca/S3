@@ -1,5 +1,7 @@
 import style from './Form.module.css'
 import Logo from '../../assets/logo-dsDS_LOGO_MIN.svg'
+import { Link } from 'react-router-dom'
+import { routes } from '../../routes'
 export const FormLogin = () => {
     return (
         
@@ -14,7 +16,7 @@ export const FormLogin = () => {
                 <div className={style.forgotPwdContainer}>
                     <a href="" className={style.formLink}>Esqueceu a senha?</a>
                 </div>
-                <a href="" className={style.buttonLarge}>Entrar</a>
+                    <Link to={routes.home} className={style.buttonLarge}>Entrar</Link>
                 </form>
                 
                 <div className={style.or}>
@@ -25,7 +27,7 @@ export const FormLogin = () => {
                 </div>
                 <div className={style.register}>
                     <p className={style.formText}>Novo no DevSolutions?</p>
-                    <a className={style.formLink}href="">Cadastre-se</a>
+                    <Link to={routes.cadastro}> Cadastre-se </Link>
                 </div>
 
             </div>
