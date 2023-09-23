@@ -1,6 +1,6 @@
 import { SlideWelcome } from "../Components/SlideWelcome/SlideWelcome";
 
-export const Welcome = () => {
+export default function Welcome() {
   return (
     <>
         <SlideWelcome></SlideWelcome>

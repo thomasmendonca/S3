@@ -1,6 +1,6 @@
 import { ContainerCriadores } from "../Components/Criadores/ContainerCriadores";
 
-export const Criadores = () => {
+export default function Criadores () {
   return (
     <>
       <ContainerCriadores></ContainerCriadores>

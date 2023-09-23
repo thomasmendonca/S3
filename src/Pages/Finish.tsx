@@ -1,6 +1,6 @@
 import { SlideFinish } from "../Components/SlideFinish/SlideFinish"
 
-export const Finish =() => {
+export default function Finish () {
   return(
     <>
         <SlideFinish/>

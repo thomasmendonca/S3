@@ -1,6 +1,6 @@
 import { SlideReady } from "../Components/SlideReady/SlideReady"
 
-export const Ready = () => {
+export default function Ready () {
   return(
     <SlideReady/>
   )

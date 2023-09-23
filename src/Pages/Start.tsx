@@ -1,6 +1,6 @@
 import { SlideStart } from "../Components/SlideStart/SlideStart"
 
-export const Start = () => {
+export default function Start() {
   return(
     <SlideStart/>
   )

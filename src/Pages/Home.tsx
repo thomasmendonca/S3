@@ -4,7 +4,7 @@ import { WelcomeTitle } from "../Components/WelcomeTitle/WelcomeTitle";
 import { CallCasualty } from "../Components/CallCasualtySection/CallCasualtySection";
 import { NavBar } from "../Components/NavBar/NavBar";
 
-export const Home = () => {
+export default function Home () {
   return (
     <>
       <div className={Style.contentContainer}>

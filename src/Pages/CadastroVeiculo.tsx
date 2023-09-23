@@ -1,13 +1,9 @@
-import { Header } from '../Components/Header/Header'
-import { FormCadastroVeiculo } from '../Components/FormCadastroVeiculo/FormCadastroVeiculo'
-import { Footer } from '../Components/Footer/Footer'
+import { FormCadastroVeiculo } from "../Components/FormCadastroVeiculo/FormCadastroVeiculo";
 
-export const CadastroVeiculo = ()=>{
-    return(
-        <>
-        
-        <FormCadastroVeiculo></FormCadastroVeiculo>
-
-        </>
-    )
+export default function CadastroVeiculo() {
+  return (
+    <>
+      <FormCadastroVeiculo></FormCadastroVeiculo>
+    </>
+  );
 }
